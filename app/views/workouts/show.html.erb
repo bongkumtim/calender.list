@@ -1,0 +1,11 @@
+<h1> Your routine </h1>
+
+<h2><%= @workout.workout %></h2>
+<p><%= @workout.date %></p>
+<p><%= @workout.mood %></p>
+<p><%= @workout.length %></p>
+
+<%= link_to "Home", root_path %><br>
+<%= link_to "Add routine", new_workout_path %><br>
+<%= link_to "Edit", edit_workout_path(@workout) %><br>
+<%= link_to "Delete", workout_path, method: :delete, data: {confirm: "Are you sure?"} %>
